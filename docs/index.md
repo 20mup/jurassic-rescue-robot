@@ -106,7 +106,7 @@ The Jurassic Rescue Robot was a semester-long robotics project where we designed
 ## 🎓 Team Contributions
 
 **Mousa Pirzada**: Lead programmer, autonomous logic, CAD design, closed-loop systems, documentation
-**Kaitlyn \[Last Name]**: Hardware integration, laser cutting, wiring, team health lead
+**Kaitlyn \Johnston**: Hardware integration, laser cutting, wiring, team health lead
 
 ---
 
