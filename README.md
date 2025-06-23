@@ -4,7 +4,7 @@
 > MREN 303 – “Tronassic Park” Robotics Challenge (2024)
 
 **A semester-long robotics project developed during my Mechatronics & Robotics Engineering coursework at Queen's University.**  
-We designed, prototyped, and iterated a robot for a Jurassic Park-themed challenge...
+We designed, prototyped, and iterated a robot for a Jurassic Park-themed challenge. The robot’s mission was to autonomously press a button to open a gate and manually rescue a doll. Corralling dinosaur figures was a bonus objective.
 
 ---
 
@@ -59,26 +59,36 @@ We ran 5 Scrum-based design rounds. Each round included sprint planning, mechani
 
 ```
 jurassic-rescue-robot/
-├── README.md                 # Overview and highlights (this file)
+├── README.md                 # This file
 ├── code/
 │   └── pico_control.py       # Motor control, PID, encoder integration
 ├── docs/
-│   └── final_report.md       # Full GitLab design reflections (optional)
+│   └── final_report.md       # Full GitLab design reflections
 ├── images/
-│   ├── prototype.jpg         # Photos of cardboard/laser-cut versions
-│   └── claw_design.png       # CAD or hand sketches
+│   ├── award_robot.jpg
+│   ├── robot_front.jpg
+│   ├── robot_back.jpg
+│   └── robot_side.jpg
 ├── design/
-│   └── laser_cut_parts.dxf   # Files for fabrication
+│   └── laser_cut_parts.dxf   # Fabrication-ready part files
 ```
 
 ---
 
-## 📸 Photos (Add These!)
+## 📸 Photos
 
-```markdown
-![Cardboard Prototype](images/prototype.jpg)
-![Claw Mechanism Sketch](images/claw_design.png)
-```
+**🏆 People's Choice Award Winner — Final Robot Design**
+
+![Award Shot](images/award_robot.jpg)
+
+**📐 Front View**  
+![Front View](images/robot_front.jpg)
+
+**🔧 Side View**  
+![Side View](images/robot_side.jpg)
+
+**🔙 Back View**  
+![Back View](images/robot_back.jpg)
 
 ---
 
