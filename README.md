@@ -13,6 +13,12 @@ A semi-autonomous rescue robot developed for the **MREN 303 2024 Tronassic Park 
 
 ---
 
+## 📘 Full Case Study
+
+For a detailed breakdown of the design process, planning, CAD iterations, health & safety reflections, and final implementation:
+
+👉 [View Full Case Study →](docs/index.md)
+
 ## 🚀 Project Highlights
 
 - Autonomous navigation using ultrasonic sensors to press a physical button.
