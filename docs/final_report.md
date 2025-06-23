@@ -1,7 +1,7 @@
 # 📘 Final Report — Jurassic Rescue Robot
 
 **Course**: MREN 303 — Mechatronics and Robotics Design  
-**Team**: Mousa Pirzada & Kaitlyn  
+**Team**: Mousa Pirzada & Kaitlyn Johnston
 **Award**: 🏆 People's Choice Award – Tronassic Park Robotics Challenge (2024)
 
 ---
