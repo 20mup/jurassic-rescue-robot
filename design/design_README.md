@@ -52,4 +52,4 @@ This folder contains all mechanical design files used for laser cutting, 3D prin
 ## 👨‍💻 Contributors
 
 - Mousa Pirzada — CAD Design + Fitment Testing  
-- Kaitlyn — Laser Cut Prep + Fabrication
+- Kaitlyn Johnston — Laser Cut Prep + Fabrication
