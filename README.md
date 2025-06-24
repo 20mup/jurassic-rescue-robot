@@ -50,13 +50,19 @@ For a detailed breakdown of the design process, planning, CAD iterations, health
 
 ## 📸 Gallery
 
-| Front | Side | Back |
-|-------|------|------|
-| ![Front](images/robot_front.jpg) | ![Side](images/robot_side.jpg) | ![Back](images/robot_back.jpg) |
+<!-- Front / Side / Back -->
+<p align="center">
+  <img src="/assets/images/jurassic-rescue/robot_front.jpg" alt="Front" width="250"/>
+  <img src="/assets/images/jurassic-rescue/robot_side.jpg" alt="Side" width="250"/>
+  <img src="/assets/images/jurassic-rescue/robot_back.jpg" alt="Back" width="250"/>
+</p>
 
-| Award | Circuit | Gameboard |
-|-------|---------|-----------|
-| ![Award](images/award_robot.jpg) | ![Schematic](images/electrical_schematic.png) | ![Gameplay](images/gameboard_middle.webp) |
+<!-- Award / Circuit / Gameboard -->
+<p align="center">
+  <img src="/assets/images/jurassic-rescue/award_robot.jpg" alt="Award" width="250"/>
+  <img src="/assets/images/jurassic-rescue/electrical_schematic.png" alt="Schematic" width="250"/>
+  <img src="/assets/images/jurassic-rescue/gameboard_middle.webp" alt="Gameplay" width="250"/>
+</p>
 
 ---
 
