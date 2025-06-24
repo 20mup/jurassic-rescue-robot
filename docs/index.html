@@ -1,119 +1,154 @@
-<!-- This is a minimal GitHub Pages Jekyll-compatible index.html for your /docs folder -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jurassic Rescue Robot</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #111;
-      color: #f5f5f5;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
       line-height: 1.6;
     }
+
     header {
-      background: #222;
-      padding: 2rem;
       text-align: center;
+      padding: 4rem 1rem 2rem;
+      background-color: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #00ffe0;
+      margin-bottom: 0.5rem;
     }
+
     header p {
-      color: #ccc;
-      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
-    .section {
-      padding: 2rem 5%;
-      max-width: 900px;
-      margin: auto;
+
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-    h2 {
-      border-bottom: 2px solid #555;
-      padding-bottom: 0.5rem;
-    }
-    img {
-      width: 100%;
+
+    section {
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.05);
       border-radius: 12px;
-      margin: 1rem 0;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffe0;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .tech-icons {
+      display: flex;
       gap: 1rem;
+      margin-top: 1rem;
     }
+
+    .tech-icons img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease;
+    }
+
+    .tech-icons img:hover {
+      transform: scale(1.2);
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
-      background: #222;
-      color: #aaa;
       font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Jurassic Rescue Robot</h1>
-    <p>Autonomous + Manual Robot for Rescue Missions</p>
+    <p>Autonomous + Manual Robot for High-Stakes Rescue Missions</p>
   </header>
 
-  <div class="section">
-    <h2>Overview</h2>
-    <p>This robot was designed and built to complete a Jurassic-themed rescue mission using both autonomous and manual modes. With constraints on the number of motors and fabrication tools, the team created a custom mechanism capable of gate control and object retrieval while navigating a complex course.</p>
-    <img src="../images/robot-front-view.png" alt="Front View of Robot" />
-  </div>
+  <div class="container">
+    <section>
+      <h2>🎯 Mission Overview</h2>
+      <ul>
+        <li>Autonomously press button to open gate</li>
+        <li>Manually retrieve rescue doll from pit</li>
+        <li>Corral dinosaurs into a cage (optional)</li>
+        <li>Built for speed, accuracy, and multi-mode control</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Final Design Features</h2>
-    <ul>
-      <li><strong>Manual Control:</strong> Joystick-based drive with feedback</li>
-      <li><strong>Autonomous Mode:</strong> Ultrasonic-guided navigation</li>
-      <li><strong>Claw Mechanism:</strong> For figure rescue and retrieval</li>
-      <li><strong>Chassis:</strong> Hybrid 3D-printed + laser cut base</li>
-      <li><strong>Specialized Caster:</strong> Enables full maneuverability</li>
-    </ul>
-  </div>
+    <section>
+      <h2>🔧 Technologies Used</h2>
+      <div class="tech-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" title="C++ Arduino" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidworks/solidworks-original.svg" alt="SolidWorks" title="SolidWorks" />
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>Gallery</h2>
-    <div class="grid">
-      <img src="../images/robot-side-view.png" alt="Side View" />
-      <img src="../images/robot-back-view.png" alt="Back View" />
-      <img src="../images/robot-circuit.png" alt="Circuit Diagram" />
-    </div>
-  </div>
+    <section>
+      <h2>🧠 Final Features</h2>
+      <ul>
+        <li>Joystick-based manual control with closed-loop feedback</li>
+        <li>Ultrasonic-based autonomous navigation to target button</li>
+        <li>Vertical claw lifting mechanism for pit rescue</li>
+        <li>Hybrid 3D-printed + laser cut chassis</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Tech Stack</h2>
-    <ul>
-      <li>Python – Raspberry Pi Pico control scripts</li>
-      <li>C++ – Arduino-based logic</li>
-      <li>SolidWorks – CAD modeling</li>
-    </ul>
-  </div>
+    <section>
+      <h2>📸 Media Gallery</h2>
+      <ul>
+        <li>Front, side, and back robot views</li>
+        <li>Design evolution (cardboard → CAD → final)</li>
+        <li>Laser cut parts + circuit schematics</li>
+        <li>Presentation & poster screenshots</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Lessons Learned</h2>
-    <ul>
-      <li>Prototyping with cardboard drastically reduced rework</li>
-      <li>Closed-loop feedback increased driving precision</li>
-      <li>Scrum-based planning accelerated deliverable quality</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Team</h2>
-    <p><strong>Mousa Pirzada:</strong> Lead programmer, CAD + logic systems, documentation<br/>
-    <strong>Kaitlyn Johnston:</strong> Hardware, integration, wiring, testing</p>
+    <section>
+      <h2>🚀 Lessons + Contributions</h2>
+      <ul>
+        <li>Prototyping with cardboard saved mechanical rework</li>
+        <li>Closed-loop feedback improved drive accuracy</li>
+        <li>Collaborative Scrum planning enabled reliable delivery</li>
+        <li><strong>Mousa Pirzada</strong>: Programming, CAD, Logic, Wiring, Docs</li>
+      </ul>
+    </section>
   </div>
 
   <footer>
-    &copy; 2025 Mousa Pirzada | View on <a href="https://github.com/yourusername/your-repo" target="_blank" style="color: #eee;">GitHub</a>
+    Built by Mousa Pirzada | Designed for showcase on GitHub Pages
   </footer>
 </body>
+
 </html>
