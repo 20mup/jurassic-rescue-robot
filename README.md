@@ -1,87 +1,91 @@
 # 🦖 Jurassic Rescue Robot
 
-A semi-autonomous rescue robot developed for the **MREN 303 2024 Tronassic Park Competition** at Queen’s University. Designed to traverse a gameboard, press a gate-opening button autonomously, and manually retrieve a "dinosaur" figure under strict mechanical, electrical, and coding constraints.
+A semi-autonomous rescue robot developed for the **MREN 303: Mechatronics Design** course at Queen’s University. Designed to traverse a gameboard, press a gate-opening button autonomously, and manually retrieve a "dinosaur" figure under strict hardware constraints.
 
-![Robot Front View](images/robot_front.jpg)
+![Robot Front View](assets/images/jurassic-rescue/robot_front.jpg)
 
 ---
 
 ## 🏆 Awards
 
-> 🥇 **People’s Choice Award**  
-> Chosen by peers and faculty for outstanding design and implementation.
-
----
-
-## 📘 Full Case Study
-
-For a detailed breakdown of the design process, planning, CAD iterations, health & safety reflections, and final implementation:
-
-👉 [View Full Case Study →](docs/index.md)
-
-## 🚀 Project Highlights
-
-- Autonomous navigation using ultrasonic sensors to press a physical button.
-- Manual override via joystick-based control system.
-- Energy-efficient power management using voltage dividers.
-- Fully custom mechanical design built from laser-cut and 3D printed parts.
-- Modular codebase split across Arduino and Pico W boards.
-
----
-
-## 📁 Repository Structure
-
-| Folder | Description |
-|--------|-------------|
-| `code/` | Full source code for robot control (Pico + Arduino). |
-| `design/` | CAD files (`.SLDPRT`, `.STL`, `.DXF`) for all robot parts. |
-| `images/` | Showcase images, schematics, and gameplay photos. |
-| `docs/` | Final technical report and detailed documentation. |
-
----
-
-## 🔧 Technologies Used
-
-- **Hardware:** Raspberry Pi Pico W, Arduino-compatible controller, DC encoder motors, ultrasonic sensors, voltage dividers, joysticks.
-- **Software:** C++, MicroPython, SolidWorks, laser cutting, 3D printing.
-- **Tools:** OnShape, Git, GitHub, VS Code.
+> 🥇 **People’s Choice Award** – Voted best design and execution by peers and faculty.
 
 ---
 
 ## 📸 Gallery
 
-<!-- Front / Side / Back -->
-{% include image-gallery.html images="images/robot_side.jpg,images/robot_back.jpg" height="250" %}
-{% include image-gallery.html images="images/award_robot.jpg,images/electrical_schematic.png,images/gameboard_middle.webp" height="250" %}
+| Front | Side | Back |
+|-------|------|------|
+| <img src="/assets/images/jurassic-rescue/robot_front.jpg" width="250"/> | <img src="/assets/images/jurassic-rescue/robot_side.jpg" width="250"/> | <img src="/assets/images/jurassic-rescue/robot_back.jpg" width="250"/> |
+
+| Award | Circuit | Gameboard |
+|-------|---------|-----------|
+| <img src="/assets/images/jurassic-rescue/award_robot.jpg" width="250"/> | <img src="/assets/images/jurassic-rescue/electrical_schematic.png" width="250"/> | <img src="/assets/images/jurassic-rescue/gameboard_middle.webp" width="250"/> |
 
 ---
 
-## 📄 Documentation
+## 🚀 Project Overview
 
-The full design process, task breakdowns, planning sprints, and retrospectives can be found in [`docs/final_report.md`](docs/final_report.md).
-
----
-
-## 🤝 Team Contributions
-
-- **Mousa Pirzada**: Lead programmer (Pico W), encoder control, closed-loop motor feedback, system integration.
-- **Kaitlyn Johnston**: Electrical schematic design, CAD modeling, laser cutting, system assembly.
+Built for Queen’s University’s **Tronassic Park Competition**, this robot combined autonomous and manual control to complete a two-phase mission:
+- **Phase 1:** Autonomously press a button to open a gate.
+- **Phase 2:** Switch to joystick control to retrieve a toy figure from a pit.
 
 ---
 
-## 🧠 Lessons Learned
+## 🧩 Problem / 💡 Solution
 
-- Tighter tolerances on chassis holes prevent slippage.
-- Autonomous mode testing requires iterative debugging under gameboard conditions.
-- Coordinated CAD + electronics planning drastically reduced late-stage design issues.
+**Problem:** Navigate an uneven gameboard, press a button accurately, and retrieve an object — all using only 3 servo motors and custom electronics.  
+**Solution:** A compact, dual-mode robot using ultrasonic alignment and DC motor encoders, with a front clamp to lift the target figure like a forklift.
 
 ---
 
-## 📬 Feedback & Contact
+## ✨ Key Features
 
-Have questions or want to build your own version? Reach out via GitHub or open an Issue.
+- Autonomous navigation using ultrasonic sensors
+- Manual control via joystick (Arduino + Pico W)
+- Closed-loop motor feedback with DC encoders
+- Custom 3D-printed chassis and laser-cut wheels
+- Integrated power management (voltage dividers)
+- Emergency override via controller
+
+---
+
+## 💻 Tech Stack
+
+| Area              | Tools / Tech                      |
+|-------------------|-----------------------------------|
+| Microcontroller   | Raspberry Pi Pico W, Arduino      |
+| Programming       | MicroPython, Arduino C++          |
+| CAD & Fabrication | SolidWorks, laser cutting, 3D printing |
+| Communication     | USB Serial, Joystick              |
+
+---
+
+## 📁 Project Structure
+
+```bash
+JurassicRescueRobot/
+├── code/                   # MicroPython + Arduino scripts
+├── design/                 # CAD files (.SLDPRT, .STL, .DXF)
+├── images/                 # Robot photos & schematics
+├── docs/                   # Engineering case study & final report
+└── README.md
+```
+
+---
+
+## 👥 Team
+
+- **Mousa Pirzada** – Lead Programmer: Pico W scripting, encoder feedback, integration.
+- **Kaitlyn Johnston** – Electrical + Mechanical: Circuit design, CAD, fabrication.
+
+---
+
+## 📖 Learn More
+
+- [📂 CAD Files & Build Details](https://github.com/20mup/JurassicRescueRobot/tree/main/design)
+- [📄 Engineering Case Study](docs/jurassic-rescue-case-study.md)
 
 ---
 
 > _Built with gears, wires, and the spirit of Jurassic Park._ 🦕
-
