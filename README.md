@@ -2,7 +2,7 @@
 
 A semi-autonomous rescue robot developed for the **MREN 303: Mechatronics Design** course at Queen’s University. Designed to traverse a gameboard, press a gate-opening button autonomously, and manually retrieve a "dinosaur" figure under strict hardware constraints.
 
-![Robot Front View](assets/images/jurassic-rescue/robot_front.jpg)
+![Robot Front View](images/robot_front.jpg)
 
 ---
 
@@ -16,11 +16,11 @@ A semi-autonomous rescue robot developed for the **MREN 303: Mechatronics Design
 
 | Front | Side | Back |
 |-------|------|------|
-| <img src="/assets/images/jurassic-rescue/robot_front.jpg" width="250"/> | <img src="/assets/images/jurassic-rescue/robot_side.jpg" width="250"/> | <img src="/assets/images/jurassic-rescue/robot_back.jpg" width="250"/> |
+| <img src="images/robot_front.jpg" width="250"/> | <img src="/images/robot_side.jpg" width="250"/> | <img src="/images/robot_back.jpg" width="250"/> |
 
 | Award | Circuit | Gameboard |
 |-------|---------|-----------|
-| <img src="/assets/images/jurassic-rescue/award_robot.jpg" width="250"/> | <img src="/assets/images/jurassic-rescue/electrical_schematic.png" width="250"/> | <img src="/assets/images/jurassic-rescue/gameboard_middle.webp" width="250"/> |
+| <img src="/images/award_robot.jpg" width="250"/> | <img src="/images/electrical_schematic.png" width="250"/> | <img src="/images/gameboard_middle.webp" width="250"/> |
 
 ---
 
