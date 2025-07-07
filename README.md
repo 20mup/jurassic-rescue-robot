@@ -1,6 +1,6 @@
 # 🦖 Jurassic Rescue Robot
 
-A semi-autonomous rescue robot developed for the **MREN 303: Mechatronics Design** course at Queen’s University. Designed to traverse a gameboard, press a gate-opening button autonomously, and manually retrieve a "dinosaur" figure under strict hardware constraints.
+A semi-autonomous rescue robot developed for the **MREN 303: Mechatronics Design** course at Queen’s University. Designed to traverse a gameboard, press a gate-opening button autonomously, and manually retrieve a "Ken" doll while clearing the "dinosaur" figures under strict hardware constraints.
 
 ![Robot Front View](images/robot_front.jpg)
 
