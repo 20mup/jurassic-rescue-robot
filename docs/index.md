@@ -1,126 +1,124 @@
-# 🦖 Jurassic Rescue Robot — Portfolio Case Study
+---
+layout: page
+title: Jurassic Rescue Robot — Case Study
+description: In-depth engineering breakdown of the Tronassic Park competition robot built for MREN 303.
+---
 
-## Overview
+# 🦖 Jurassic Rescue Robot — Case Study
 
-The Jurassic Rescue Robot was a semester-long robotics project where we designed, prototyped, and tested an autonomous and manually operated robot tasked with completing a Jurassic Park-themed rescue mission. The final robot could autonomously press a button to open a gate and manually retrieve a doll (Ken) from a pit while optionally corralling dinosaur figures.
-
-> 🏆 **Awarded People's Choice Award** for best project execution and presentation.
+> **A semester-long, fully custom robotics build for Queen’s University's MREN 303 design course.**  
+> From concept to competition, this case study covers the technical process, design pivots, personal challenges, and final results.
 
 ---
 
-## 💡 Project Goals
+## 🎯 Project Context
 
-* Build a robot capable of autonomous and manual operations
-* Retrieve a figure (Ken) from a simulated pit
-* Press a button autonomously to open a gate
-* Optionally corral dinosaur figures for extra points
-* Meet specific mechanical and electrical constraints
+This project was the central component of **MREN 303: Mechatronics Design** at Queen’s University, a course focused on developing technical design skills through hands-on team projects. The in-class theory was minimal — most of the learning occurred during the development of a functional, competition-ready robot.
 
----
-
-## 🔧 Engineering Constraints
-
-* **Microcontroller**: Raspberry Pi Pico
-* **Motor Limit**: Max 3 servo/DC motors
-* **Fabrication**: Limited laser cutting and 3D printing
-* **No prefab chassis**: Custom frame required
-* **Manual & Autonomous**: Robot had to support both modes
+Our challenge:  
+Design a **semi-autonomous robot** capable of navigating a Jurassic Park-themed board, pressing a gate-opening button autonomously, and retrieving a "dinosaur" figurine manually — all under strict mechanical, electrical, and coding constraints.
 
 ---
 
-## 🛠 Design Process
+## 🧠 Initial Strategy
 
-### Round 1 – Concept + Cardboard Prototypes
+We started with the idea of a **ramp-plus-clamp** rescue mechanism. The concept was to guide the robot onto a sloped ramp, align with the object, and use a servo-powered claw to lift it.
 
-* Brainstormed multiple rescue mechanisms (plow, claw, scoop)
-* Tested with cardboard mockups to visualize robot dimensions and lifting methods
-* Identified the need for a vertically-oriented claw for pit retrieval
+However, this design quickly introduced problems:
+- Too many degrees of freedom for the servos
+- Increased instability due to shifting weight
+- Complex alignment during pickup
 
-### Round 2 – Electrical + Mechanical Foundation
-
-* Integrated motor drivers, servo motors, and ultrasonic sensors
-* Built initial CAD models for the chassis and 3D printed key components
-* Created laser cut wheels and initial control logic for motors and sensors
-
-### Round 3 – Subsystems Integration
-
-* Designed power budget and schematic
-* Created and tested spherical rear wheel + motorized front wheels
-* Combined code into one file with joystick control and encoder support
-
-### Round 4 – Prototype Testing + Sustainability
-
-* Assembled full prototype chassis
-* Created switching logic between autonomous/manual modes
-* Implemented battery monitoring system
-* Considered long-term sustainability: energy efficiency and minimal emissions
-
-### Round 5 – Competition Prep
-
-* Developed autonomous logic to navigate using ultrasonic sensors
-* Tested robot on the gameboard and refined performance
-* Finalized presentation and documentation
+After evaluating the trade-offs, we pivoted to a **forklift-style ramp**: a flat platform that could wedge under the object and lift it vertically — fewer moving parts, more reliable.
 
 ---
 
-## 🤖 Final Design Features
+## 🛠️ My Role
 
-* **Manual Control**: Joystick-operated movement with closed-loop feedback
-* **Autonomous Mode**: Ultrasonic-based button navigation
-* **Lifting Mechanism**: Claw for rescuing figure from pit
-* **Chassis**: Custom hybrid of 3D-printed and laser cut parts
-* **Caster Wheel**: Spherical wheel enabled multidirectional movement
+As the **lead programmer**, I handled:
+- **Raspberry Pi Pico W scripting**
+- **Encoder integration and closed-loop motor feedback**
+- **Autonomous navigation using ultrasonic sensors**
+- **Manual joystick control tuning**
+- **Electrical debugging and system integration**
 
----
-
-## 🧠 Key Technologies Used
-
-* Python (Raspberry Pi Pico scripts)
-* C++ (Arduino-based logic)
-* SolidWorks (CAD modeling)
-* Laser Cutting + 3D Printing
-* Ultrasonic Sensors, Servo & DC Motors
+I also participated in weekly Scrum planning, task breakdowns, and integration sessions with my teammate Kaitlyn.
 
 ---
 
-## 📸 Media Gallery
+## ⚠️ Final Week Setback
 
-> *Available in `/design/` and `/images/` folders in repo.*
+Two weeks before our final presentation and test drive, **my laptop’s hard drive failed**. I lost everything — code, notes, CAD references. With the final milestone fast approaching, I had no choice but to **rebuild my entire contribution from scratch**.
 
-* Front, side, and back views of robot
-* Design evolution (cardboard → 3D print → final)
-* Circuit schematic
-* Presentation and poster screenshots
+For two weeks, I worked non-stop:
+- Rewriting all control logic from memory
+- Re-integrating encoder feedback and motor control
+- Running late-night hardware tests
+- Debugging under pressure with no time to spare
 
----
-
-## 📝 Lessons Learned
-
-* Prototyping early with cardboard saved mechanical rework
-* Encoder calibration and closed-loop feedback significantly improved drive accuracy
-* Mechanical tolerances (wheel shaft fit) directly affected robot movement
-* Collaborative planning via Scrum ensured iterative, functional builds
+Despite this major setback, we managed to finish and deliver the project on time — fully functional and ready for demo day.
 
 ---
 
-## 🎓 Team Contributions
+## 📏 Constraints & Challenges
 
-**Mousa Pirzada**: Lead programmer, autonomous logic, CAD design, closed-loop systems, documentation
-**Kaitlyn \Johnston**: Hardware integration, laser cutting, wiring, team health lead
-
----
-
-## 🏁 Outcome
-
-The final robot successfully completed all base objectives and demonstrated autonomous gate interaction. The project was recognized with the **People’s Choice Award** at the course showcase for outstanding teamwork, innovation, and presentation.
+- **3 servo motor limit**
+- **Raspberry Pi Pico W + Arduino hybrid**
+- No pre-made chassis or wheels — all laser cut or 3D printed
+- Physical button pressing required precision
+- No external debugging tools beyond onboard prints
 
 ---
 
-## 🔗 Repository Highlights
+## 🧪 Testing Process
 
-* `/code/` — All Python and Arduino scripts
-* `/design/` — Design files, photos, and schematics
-* `/docs/` — Final report and case study
-* `/images/` — Media used in documentation and README
+Testing was iterative and often frustrating:
+- Ultrasonic sensor alignment required ideal angle calibration
+- Closed-loop motor control needed constant PID retuning
+- Button pressing demanded perfect perpendicular alignment
+- Battery fluctuations affected consistency
 
-> ⭐ **This project reflects our ability to integrate mechanical design, embedded programming, and iterative prototyping into a real-world robotics challenge.**
+We learned the importance of **physical tolerances**, **debounce logic**, and real-world testing beyond simulations.
+
+---
+
+## 🏁 Results
+
+The robot successfully:
+- Navigated the board autonomously to press the gate button
+- Transitioned into manual mode for precision pickup
+- Completed the full task sequence within the competition time
+
+We were honored to win the:
+
+> 🥇 **People’s Choice Award**  
+> _Voted best robot design and execution by peers and faculty._
+
+---
+
+## 🧠 Takeaways
+
+- Don’t overcomplicate early designs — iterate based on simplicity first
+- CAD precision is just as important as code
+- Documentation + backups are life-saving
+- Clear division of roles made collaboration smooth
+- Real innovation happens under constraints
+
+---
+
+## 👥 Team Members
+
+- **Mousa Pirzada** — Lead Programming, System Integration, Motor Control
+- **Kaitlyn Johnston** — CAD Design, Circuit Assembly, Fabrication
+
+---
+
+## 📎 Related Links
+
+- [🔗 GitHub Repository](https://github.com/20mup/JurassicRescueRobot)
+- [📂 CAD & Files](https://github.com/20mup/JurassicRescueRobot/tree/main/design)
+- [🏆 View the Main Portfolio Page](/projects/jurassic-rescue-robot)
+
+---
+
+> _Built with gears, wires, and the spirit of Jurassic Park._ 🦕
