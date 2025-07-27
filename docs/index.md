@@ -109,8 +109,8 @@ We were honored to win the:
 
 ## 📎 Related Links
 
-- [🔗 GitHub Repository](https://github.com/20mup/JurassicRescueRobot)
-- [📂 CAD & Files](https://github.com/20mup/JurassicRescueRobot/tree/main/design)
+- [🔗 GitHub Repository](https://github.com/20mup/Jurassic-Rescue-Robot)
+- [📂 CAD & Files](https://github.com/20mup/Jurassic-Rescue-Robot/design)
 - [🏆 View the Main Portfolio Page](/projects/jurassic-rescue-robot)
 
 ---
